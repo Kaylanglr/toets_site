@@ -1,0 +1,100 @@
+.create {
+    display: grid;
+    place-content: center;
+    overflow: auto;
+    padding: 30px;
+}
+
+.create-form, .create-vraag{
+    background-color: rgba(128, 128, 128, 0.575);
+    color: white;
+    width: 350px;
+    min-height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.create-vraag {
+    width: 450px;
+}
+
+
+.create-form h2, .create-vraag h2 {
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+input[type=text], select {
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+table {
+    color: white;
+    font-size: 20px;
+}
+
+.bottom {
+    display: flex;
+    place-content: center;
+}
+
+
+
+input[type=submit] {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(143,229,8);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+    width: 200px;
+}
+
+
+.type {
+    display: flex;
+    place-content: center;
+    margin-bottom: 30px;
+}
+
+.type button {
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(143,229,8);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+}
+
+.open, .meerkeuze {
+    display: none;
+}
+
+.msg {
+    display: none;
+    padding: 8px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color:   rgba(144, 229, 8, 0.774);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.msg p {
+    margin: 0;
+}

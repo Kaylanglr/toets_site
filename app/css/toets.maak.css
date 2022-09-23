@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: gray;
+    padding: 5px;
+}
+
+header img {
+    width: 70px;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    grid-area: main;
+}
+
+
+
+
+.toets-form, .confirm, .finish, .result {
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.568);
+    width: 450px;
+    min-height: fit-content;
+    border-radius: 15px;
+}
+
+.confirm, .finish, .result {
+    text-align: center;
+    color: white;
+    width: fit-content;
+}
+
+.confirm p, .result p {
+    font-size: 20px;
+}
+
+.confirm button, .finish button, .result a {
+    outline: none;
+    border: none;
+    background-color: rgb(143,229,8);
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.confirm button a,.result a {
+    color: white;
+    text-decoration: none;
+}
+
+.result a {
+    padding: 10px;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    place-content: center;
+}
+
+.buttons button {
+    outline: none;
+    border: none;
+    background-color: rgb(143,229,8);
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.opties {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vraag h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.count {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    color: rgb(157, 255, 0);
+}
+
+input[type=text]{
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+input[type='radio'] { 
+    transform: scale(2); 
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+footer {
+    color: white;
+    align-items: center;
+    place-content: center;
+    display: flex;
+    background-color: gray;
+    grid-area: footer;
+}
+
+.hidden {
+    display: none;
+}
+
+.voldoende {
+    color: greenyellow;
+}
+
+.onvoldoende {
+    color: red;
+}

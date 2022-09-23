@@ -1,0 +1,103 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(128, 128, 128, 0.425); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(143,229,8); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(125, 202, 1); 
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: gray;
+    padding: 5px;
+}
+
+header img {
+    width: 70px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "menu content";
+}
+
+.content {
+    grid-area: content;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.425);
+}
+
+.menu-top {
+    text-align: center;
+    color: white;
+}
+
+.menu-top i{
+    font-size: 100px;
+}
+
+.menu-top nav{
+    margin-top: 30px;
+}
+
+.menu-top nav a, .menu-bottom a{
+    text-align: center;
+    display: block;
+    background-color: rgb(143,229,8);
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+
+footer {
+    color: white;
+    align-items: center;
+    place-content: center;
+    display: flex;
+    background-color: gray;
+    grid-area: footer;
+}

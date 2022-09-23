@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: gray;
+    padding: 5px;
+}
+
+header img {
+    width: 70px;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    grid-area: main;
+}
+
+.login-box {
+    background-color: gray;
+    color: white;
+    width: 350px;
+    min-height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.login-box h2 {
+    text-align: center;
+}
+
+input[type=password], input[type=email]  {
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+}
+
+.login-box table label{
+    color: white;
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.msg {
+    background-color: rgba(221, 83, 83, 0.705);
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.bottom {
+    display: flex;
+    place-content: center;
+}
+
+
+
+input[type=submit] {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(143,229,8);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgb(82, 82, 82);
+}
+
+table td {
+    padding: 5px;
+}
+
+footer {
+    color: white;
+    align-items: center;
+    place-content: center;
+    display: flex;
+    background-color: gray;
+    grid-area: footer;
+}

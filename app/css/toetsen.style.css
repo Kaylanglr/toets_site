@@ -1,0 +1,47 @@
+.content {
+    display: grid;
+    place-content: center;
+}
+
+.toetsen {
+    width: 700px;
+    min-height: fit-content;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+thead {
+    background-color: gray;
+    border: none;
+    font-size: 25px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+td {
+    font-size: 20px;
+}
+
+td a {
+    background-color: rgb(143,229,8);
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+.toetsen h2 {
+    color: black;
+    text-align: center;
+}
